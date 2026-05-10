@@ -93,7 +93,7 @@ function SalesPage() {
             <Shield className="h-3.5 w-3.5" /> Para pais e mães de adolescentes
           </span>
           <h1 className="mt-6 font-serif text-4xl font-bold leading-[1.05] text-foreground md:text-6xl lg:text-7xl">
-            Você sente que <span className="text-gradient-gold italic">algo está diferente</span> com seu filho, e o medo não te deixa dormir?
+            Você sente que <span className="text-gradient-gold italic">algo está diferente</span> com seu filho e o medo não te deixa dormir?
           </h1>
           <p className="mx-auto mt-7 max-w-2xl text-lg text-muted-foreground md:text-xl leading-relaxed">
             Descubra os <strong className="text-foreground">sinais ocultos</strong> que podem indicar envolvimento com drogas e o roteiro de perguntas que abre o coração do seu adolescente <strong className="text-foreground">sem brigas, sem confronto e sem afastamento</strong>.
