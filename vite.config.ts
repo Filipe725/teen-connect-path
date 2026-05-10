@@ -7,7 +7,7 @@ import { tanstackRouter } from "@tanstack/router-plugin/vite";
 // Para GitHub Pages em https://USER.github.io/REPO/ defina VITE_BASE_PATH=/REPO/
 // Para domínio raiz / custom domain mantenha "/".
 export default defineConfig({
-  base: process.env.VITE_BASE_PATH ?? "/",
+ base: "/teen-connect-path/",
   plugins: [
     tsconfigPaths(),
     tanstackRouter({ target: "react", autoCodeSplitting: true }),
