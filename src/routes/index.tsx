@@ -125,7 +125,7 @@ function SalesPage() {
             Seu filho mudou. <strong>Você sente.</strong> Os amigos novos que ele não te apresenta. O celular sempre virado para baixo. As respostas curtas. O olhar que desvia. O quarto que virou fortaleza.
           </p>
           <p>
-            E quando você tenta conversar — qualquer pergunta vira ataque, qualquer cuidado vira "controle", qualquer preocupação vira porta batendo.
+            E quando você tenta conversar, qualquer pergunta vira ataque, qualquer cuidado vira "controle", qualquer preocupação vira porta batendo.
           </p>
           <p className="font-serif text-2xl text-accent italic">
             Você não está louco(a). Você não está exagerando. E você definitivamente não está sozinho(a).
@@ -140,7 +140,7 @@ function SalesPage() {
         </h2>
         <div className="mt-12 grid gap-5 md:grid-cols-2">
           {[
-            { i: AlertTriangle, t: "O medo silencioso", d: "Aquele frio na barriga toda vez que ele sai de casa — e você fica refém do celular esperando notícias." },
+            { i: AlertTriangle, t: "O medo silencioso", d: "Aquele frio na barriga toda vez que ele sai de casa e você fica refém do celular esperando notícias." },
             { i: Heart, t: "A culpa que não cala", d: "Será que falhei? Será que eu deveria ter percebido antes? Será que ainda dá tempo?" },
             { i: MessageCircle, t: "As conversas que viram briga", d: "Você abre a boca com amor e ele responde com agressividade. E você fica sem saber o que fazer." },
             { i: Lock, t: "A sensação de impotência", d: "Você é mãe/pai. Devia saber proteger. Mas a verdade é que ninguém te ensinou a lidar com isso." },
@@ -161,13 +161,13 @@ function SalesPage() {
         </h2>
         <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/90">
           <p>
-            Quando o assunto vira manchete na sua família, geralmente já é tarde. O início é <strong>invisível</strong> — feito de pequenas mudanças que parecem "coisa de adolescente" e que, somadas, formam um padrão que ninguém te ensinou a enxergar.
+            Quando o assunto vira manchete na sua família, geralmente já é tarde. O início é <strong>invisível</strong> feito de pequenas mudanças que parecem "coisa de adolescente" e que, somadas, formam um padrão que ninguém te ensinou a enxergar.
           </p>
           <p>
             Mudança no grupo de amigos. Olheiras "do estudo". Apetite que some e volta. Dinheiro que falta. Cheiros estranhos. Humor em montanha-russa. Sono trocado. Notas caindo. E, principalmente: <strong className="text-accent">a distância emocional que cresce todos os dias</strong>.
           </p>
           <p>
-            A maioria dos pais só reage quando algo acontece. <strong>Os pais que protegem agem antes</strong> — não com vigilância, não com castigo, não com sermão. Mas com <em>informação certa</em> e <em>conversa estratégica</em>.
+            A maioria dos pais só reage quando algo acontece. <strong>Os pais que protegem agem antes</strong> não com vigilância, não com castigo, não com sermão. Mas com <em>informação certa</em> e <em>conversa estratégica</em>.
           </p>
         </div>
       </Section>
@@ -189,9 +189,9 @@ function SalesPage() {
             </p>
             <ul className="space-y-4">
               {[
-                "Um mapa visual dos 27 sinais que pais experientes aprenderam a identificar — separados entre comportamentais, físicos e emocionais.",
+                "Um mapa visual dos 27 sinais que pais experientes aprenderam a identificar, separados entre comportamentais, físicos e emocionais.",
                 "O Método Diálogo Sem Barreiras: uma abordagem empática que substitui interrogatório por conexão real.",
-                "Um roteiro de 41 perguntas estratégicas para abrir conversas que parecem impossíveis — sem que seu filho se feche.",
+                "Um roteiro de 41 perguntas estratégicas para abrir conversas que parecem impossíveis, sem que seu filho se feche.",
                 "Protocolos prontos para os 6 cenários mais delicados (descobertas, recaídas, confronto, negação, escola, amigos).",
               ].map((t, i) => (
                 <li key={i} className="flex gap-3">
@@ -213,12 +213,12 @@ function SalesPage() {
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2">
           {[
-            { n: "01", t: "O Mapa dos 27 Sinais", d: "Tudo que pais ignoram por achar que é 'fase' — e que pode salvar a história do seu filho se identificado a tempo." },
+            { n: "01", t: "O Mapa dos 27 Sinais", d: "Tudo que pais ignoram por achar que é 'fase', e que pode salvar a história do seu filho se identificado a tempo." },
             { n: "02", t: "Método Diálogo Sem Barreiras", d: "A técnica de comunicação que desarma a defesa do adolescente e abre canal real para a verdade aparecer." },
-            { n: "03", t: "Roteiro de 41 Perguntas Estratégicas", d: "Perguntas testadas que não soam como interrogatório — feitas para revelar sem acusar." },
+            { n: "03", t: "Roteiro de 41 Perguntas Estratégicas", d: "Perguntas testadas que não soam como interrogatório, feitas para revelar sem acusar." },
             { n: "04", t: "Checklist de Comportamento Semanal", d: "Uma ferramenta simples para você acompanhar mudanças sem virar 'detetive' dentro de casa." },
             { n: "05", t: "Protocolos de Crise", d: "O que dizer (e o que NUNCA dizer) nos 6 cenários mais delicados que um pai pode enfrentar." },
-            { n: "06", t: "Plano de Reconexão em 21 Dias", d: "Um passo a passo diário para reconstruir a ponte emocional com seu filho — mesmo que ela pareça quebrada." },
+            { n: "06", t: "Plano de Reconexão em 21 Dias", d: "Um passo a passo diário para reconstruir a ponte emocional com seu filho, mesmo que ela pareça quebrada." },
           ].map(({ n, t, d }) => (
             <div key={n} className="rounded-2xl border border-border bg-card p-6 transition-all hover:border-accent hover:shadow-lg">
               <span className="font-serif text-3xl font-bold text-gradient-gold">{n}</span>
