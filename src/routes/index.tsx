@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import heroFamily from "@/assets/hero-family.jpg";
 import ebookMockup from "@/assets/ebook-mockup.png";
+import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -112,48 +113,62 @@ function SalesPage() {
         </div>
       </section>
 
-      {/* HOOK / DOR */}
-      <Section>
-        <div className="space-y-6 text-lg leading-relaxed text-foreground/90 md:text-xl">
-          <p className="font-serif text-2xl md:text-3xl text-foreground">
-            Era 2h da manhã. Você ouviu a porta abrir devagar.
-          </p>
-          <p>
-            Olhou para o teto, sentiu aquele <em>aperto familiar no peito</em> e percebeu que, mais uma vez, não conseguiria voltar a dormir.
-          </p>
-          <p>
-            Seu filho mudou. <strong>Você sente.</strong> Os amigos novos que ele não te apresenta. O celular sempre virado para baixo. As respostas curtas. O olhar que desvia. O quarto que virou fortaleza.
-          </p>
-          <p>
-            E quando você tenta conversar, qualquer pergunta vira ataque, qualquer cuidado vira "controle", qualquer preocupação vira porta batendo.
-          </p>
-          <p className="font-serif text-2xl text-accent italic">
-            Você não está louco(a). Você não está exagerando. E você definitivamente não está sozinho(a).
-          </p>
-        </div>
-      </Section>
+     
+     {/* HOOK / DOR */}
+<Section>
+  <div className="space-y-6 text-lg leading-relaxed text-foreground/90 md:text-xl">
+    <Reveal direction="up">
+      <p className="font-serif text-2xl md:text-3xl text-foreground">
+        Era 2h da manhã. Você ouviu a porta abrir devagar.
+      </p>
+    </Reveal>
+    <Reveal direction="up" delay={100}>
+      <p>
+        Olhou para o teto, sentiu aquele <em>aperto familiar no peito</em> e percebeu que, mais uma vez, não conseguiria voltar a dormir.
+      </p>
+    </Reveal>
+    <Reveal direction="up" delay={200}>
+      <p>
+        Seu filho mudou. <strong>Você sente.</strong> Os amigos novos que ele não te apresenta. O celular sempre virado para baixo. As respostas curtas. O olhar que desvia. O quarto que virou fortaleza.
+      </p>
+    </Reveal>
+    <Reveal direction="up" delay={300}>
+      <p>
+        E quando você tenta conversar, qualquer pergunta vira ataque, qualquer cuidado vira "controle", qualquer preocupação vira porta batendo.
+      </p>
+    </Reveal>
+    <Reveal direction="up" delay={400}>
+      <p className="font-serif text-2xl text-accent italic">
+        Você não está louco(a). Você não está exagerando. E você definitivamente não está sozinho(a).
+      </p>
+    </Reveal>
+  </div>
+</Section>
 
-      {/* IDENTIFICAÇÃO COM A DOR */}
-      <Section className="bg-secondary/40">
-        <h2 className="text-center font-serif text-3xl font-bold text-foreground md:text-5xl">
-          Se você reconhece isso aqui, este guia foi escrito <span className="text-gradient-gold">para você</span>
-        </h2>
-        <div className="mt-12 grid gap-5 md:grid-cols-2">
-          {[
-            { i: AlertTriangle, t: "O medo silencioso", d: "Aquele frio na barriga toda vez que ele sai de casa e você fica refém do celular esperando notícias." },
-            { i: Heart, t: "A culpa que não cala", d: "Será que falhei? Será que eu deveria ter percebido antes? Será que ainda dá tempo?" },
-            { i: MessageCircle, t: "As conversas que viram briga", d: "Você abre a boca com amor e ele responde com agressividade. E você fica sem saber o que fazer." },
-            { i: Lock, t: "A sensação de impotência", d: "Você é mãe/pai. Devia saber proteger. Mas a verdade é que ninguém te ensinou a lidar com isso." },
-          ].map(({ i: Icon, t, d }) => (
-            <div key={t} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <Icon className="h-7 w-7 text-accent" />
-              <h3 className="mt-4 font-serif text-xl font-semibold">{t}</h3>
-              <p className="mt-2 text-muted-foreground leading-relaxed">{d}</p>
-            </div>
-          ))}
+{/* IDENTIFICAÇÃO COM A DOR */}
+<Section className="bg-secondary/40">
+  <Reveal direction="up">
+    <h2 className="text-center font-serif text-3xl font-bold text-foreground md:text-5xl">
+      Se você reconhece isso aqui, este guia foi escrito <span className="text-gradient-gold">para você</span>
+    </h2>
+  </Reveal>
+  <div className="mt-12 grid gap-5 md:grid-cols-2">
+    {[
+      { i: AlertTriangle, t: "O medo silencioso", d: "Aquele frio na barriga toda vez que ele sai de casa e você fica refém do celular esperando notícias." },
+      { i: Heart, t: "A culpa que não cala", d: "Será que falhei? Será que eu deveria ter percebido antes? Será que ainda dá tempo?" },
+      { i: MessageCircle, t: "As conversas que viram briga", d: "Você abre a boca com amor e ele responde com agressividade. E você fica sem saber o que fazer." },
+      { i: Lock, t: "A sensação de impotência", d: "Você é mãe/pai. Devia saber proteger. Mas a verdade é que ninguém te ensinou a lidar com isso." },
+    ].map(({ i: Icon, t, d }, index) => (
+      <Reveal key={t} direction="up" delay={index * 120}>
+        <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+          <Icon className="h-7 w-7 text-accent" />
+          <h3 className="mt-4 font-serif text-xl font-semibold">{t}</h3>
+          <p className="mt-2 text-muted-foreground leading-relaxed">{d}</p>
         </div>
-      </Section>
-
+      </Reveal>
+    ))}
+  </div>
+</Section>
       {/* PROBLEMA INVISÍVEL */}
       <Section>
         <h2 className="font-serif text-3xl font-bold md:text-5xl">
