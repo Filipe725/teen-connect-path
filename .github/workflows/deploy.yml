@@ -17,17 +17,17 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
+   steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
       - name: Install dependencies
         run: bun install --frozen-lockfile
+      - name: Generate route tree
+        run: bunx tsr generate
       - name: Build
         env:
-          # Para project pages (https://USER.github.io/REPO/), use /REPO/.
-          # Para custom domain ou user/org page, troque para "/".
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
         run: bun run build
       - name: SPA fallback (copia index.html para 404.html)
