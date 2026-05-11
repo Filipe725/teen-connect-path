@@ -28,7 +28,7 @@ jobs:
         run: bunx @tanstack/router-cli generate --config vite.config.ts
       - name: Build
         env:
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
+          VITE_BASE_PATH: /
         run: bun run build
       - name: SPA fallback (copia index.html para 404.html)
         run: cp dist/index.html dist/404.html
