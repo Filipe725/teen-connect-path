@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import heroFamily from "@/assets/hero-family.jpg";
 import ebookMockup from "@/assets/ebook-mockup.png";
-import { Reveal } from "@/components/reveal";
+import { Reveal } from "@/components/ui/reveal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
