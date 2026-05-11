@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
   component: SalesPage,
 });
 
-const CTA_URL = "#oferta";
+const CTA_URL = "https://pay.kiwify.com.br/Ylypjz8";
 
 function CTAButton({ children, large = false, className = "" }: { children: React.ReactNode; large?: boolean; className?: string }) {
   return (
