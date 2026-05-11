@@ -380,12 +380,11 @@ function SalesPage() {
               <h3 className="font-serif text-2xl font-bold text-gold md:text-3xl">Conexão Segura — Pacote Completo</h3>
               <ul className="mt-6 space-y-3">
                 {[
-                  ["Guia Completo em PDF (120+ páginas)", "R$ 197"],
-                  ["Roteiro Estratégico de 41 Perguntas", "R$ 87"],
+                  ["Guia Completo em PDF", "R$ 197"],
+                  ["Roteiro Estratégico de 40 Perguntas", "R$ 87"],
                   ["Checklist dos 27 Sinais", "R$ 47"],
                   ["BÔNUS #1 — Webinar 'Como Manter a Calma'", "R$ 49"],
                   ["BÔNUS #2 — Mini-guia 'Resiliência do Adolescente'", "R$ 39"],
-                  ["BÔNUS #3 — Comunidade Privada de Pais", "Inestimável"],
                 ].map(([t,v]) => (
                   <li key={t} className="flex items-center justify-between gap-4 border-b border-cream/10 pb-3">
                     <span className="flex items-center gap-2 text-cream/90"><CheckCircle2 className="h-4 w-4 text-gold flex-shrink-0" />{t}</span>
@@ -433,10 +432,10 @@ function SalesPage() {
         </Reveal>
         <div className="mt-10 space-y-5">
           {[
-            [""Meu filho nunca faria isso."","É exatamente o que pensa toda família, até o dia em que pensa diferente. Este guia não nasce da desconfiança — nasce do amor preventivo. Pais informados protegem antes de precisar reagir."],
-            [""Não quero invadir a privacidade dele."","E você não vai. O método ensina a observar e dialogar — não a vigiar. É construir confiança, não muros."],
-            [""Tenho medo de estragar nossa relação."","O que estraga relações é o silêncio acumulado e a abordagem errada. Aqui você aprende exatamente o oposto: o caminho que aproxima."],
-            [""Já tentei conversar e ele se fechou."","Por isso o roteiro existe. Ele foi construído justamente para evitar o gatilho de defesa que faz adolescente fechar a porta."],
+            ['"Meu filho nunca faria isso."',"É exatamente o que pensa toda família, até o dia em que pensa diferente. Este guia não nasce da desconfiança — nasce do amor preventivo. Pais informados protegem antes de precisar reagir."],
+            ['"Não quero invadir a privacidade dele."',"E você não vai. O método ensina a observar e dialogar — não a vigiar. É construir confiança, não muros."],
+            ['"Tenho medo de estragar nossa relação."',"O que estraga relações é o silêncio acumulado e a abordagem errada. Aqui você aprende exatamente o oposto: o caminho que aproxima."],
+            ['"Já tentei conversar e ele se fechou."',"Por isso o roteiro existe. Ele foi construído justamente para evitar o gatilho de defesa que faz adolescente fechar a porta."],
           ].map(([q,a], index) => (
             <Reveal key={q} direction="up" delay={index * 100}>
               <div className="rounded-2xl border border-border bg-card p-6">
