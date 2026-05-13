@@ -396,7 +396,7 @@ function SalesPage() {
                 <p className="text-cream/70">Valor real: <span className="line-through">R$ 419</span></p>
                 <p className="mt-2 text-sm text-cream/80">Hoje, por apenas:</p>
                 <p className="mt-1 font-serif text-6xl font-bold text-gradient-gold md:text-7xl">R$ 47</p>
-                <p className="mt-1 text-sm text-cream/70">à vista — ou 12x de R$ 4,67</p>
+                <p className="mt-1 text-sm text-cream/70">à vista — ou 4x de R$ 12,79</p>
                 <div className="mt-8"><CTAButton large>Garantir meu acesso agora</CTAButton></div>
                 <p className="mt-4 text-xs text-cream/60 flex items-center justify-center gap-2"><Lock className="h-3 w-3" /> Pagamento seguro · Acesso imediato por e-mail</p>
               </div>
